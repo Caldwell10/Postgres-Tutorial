@@ -1,1 +1,3 @@
 postgres-env
+database.ini
+__pycache__/
