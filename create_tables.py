@@ -1,5 +1,8 @@
 import psycopg2
 from config import load_config
+import sys
+
+sys.path.append('/Users/caldwellwachira/Downloads/Projects-folder/Backend-practice/Postgres-connection/config.py')
 
 def create_tables():
     """Create tables in the PostgreSQL database"""
@@ -52,6 +55,7 @@ def create_tables():
 
 if __name__ == '__main__':
     create_tables()
+    print("Tables created successfully")
 
 
             
