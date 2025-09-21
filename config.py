@@ -11,8 +11,8 @@ def load_config(filename='database.ini', section='postgresql'):
 
         for param in params:
             config[param[0]] = param[1]
-        else:
-            raise Exception(f"Section {0} not found in the {1} file".format(section, filename))
+    else:
+        raise Exception(f"Section {0} not found in the {1} file".format(section, filename))
     
     return config
 
